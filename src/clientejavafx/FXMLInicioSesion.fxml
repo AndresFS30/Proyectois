@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientejavafx.FXMLInicioSesionController">
+   <children>
+      <Pane prefHeight="446.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="190.0" fitWidth="300.0" layoutY="114.0" pickOnBounds="true">
+               <image>
+                  <Image url="@recurso/descarga.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="300.0" prefHeight="446.0" prefWidth="300.0">
+         <children>
+            <Label layoutX="69.0" layoutY="36.0" text="BIENVENIDO ">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="77.0" text="Ingresa tu correo y tu contraseña para ingresar" wrapText="true">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfCorreo" layoutX="18.0" layoutY="151.0" prefHeight="31.0" prefWidth="263.0" promptText="Usuario" />
+            <Label layoutX="18.0" layoutY="135.0" text="Correo electronico">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pfContraseña" layoutX="14.0" layoutY="231.0" prefHeight="31.0" prefWidth="263.0" promptText="Contraseña" />
+            <Label layoutX="18.0" layoutY="215.0" text="Contraseña">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Button layoutX="122.0" layoutY="305.0" mnemonicParsing="false" onAction="#clickIngresar" text="Ingresar" />
+            <Label fx:id="lberrorcorreo" layoutX="18.0" layoutY="114.0" prefHeight="21.0" prefWidth="257.0" textFill="#da0c0c" />
+            <Label fx:id="lberrorcontraseña" layoutX="18.0" layoutY="188.0" prefHeight="21.0" prefWidth="263.0" textFill="#da0c0c" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
